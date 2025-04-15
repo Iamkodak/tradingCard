@@ -12,6 +12,8 @@
     height: 250px;
     margin-bottom: 10px;
     padding: 10px;
+    margin-left: 70px;
+    border: 1px whitesmoke solid;
 }
 .image {
    width: 100%;
@@ -20,7 +22,8 @@
 
 /* Heading Styling */
 #heading {
-    margin-left: 200px;
+    margin-left: 150px;
+    font-size: 50px;
 }
 
 
@@ -61,4 +64,19 @@
 #info {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+/* Animation */
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+#main-div{
+    animation: appear 5s linear;
 }
